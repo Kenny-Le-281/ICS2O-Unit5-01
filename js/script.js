@@ -22,5 +22,5 @@ document.getElementById("slider-value").innerHTML = Math.floor(Math.random() * 6
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("slider-value").innerHTML = "<p>Hello, World!</p>"
 }
