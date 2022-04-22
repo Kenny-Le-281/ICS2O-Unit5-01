@@ -11,6 +11,13 @@ if (navigator.serviceWorker) {
   })
 }
 
+'use strict'
+
+/**
+ * This function generates a random number between 1-6.
+ */
+document.getElementById("slider-value").innerHTML = Math.floor(Math.random() * 6) + 1;
+
 /**
  * This function displays an alert.
  */
