@@ -11,28 +11,21 @@ if (navigator.serviceWorker) {
   })
 }
 
-;("use strict")
+'use strict'
 
-var random-number = Math.floor(Math.random() * 6) + 1
 
-document.getElementByID(slider-value).onclick = myButtonClicked () {
+function convert () {
+  // input
+  var slider-value = parseFloat(document.getElementById('slider').value)
+  var random-number = Math.floor(Math.random() * 6) + 1;
+  
+  // process
+  var random-number = Math.floor(Math.random() * 6) + 1;
+  if (slider-value == random-number) {
+    document.getElementById("check").innerHTML = "You are correct"
+  }
 
-// number guessed by user
-var user-number = document.getElementById("slider").value;
-
-if (user-number == random-number) 
-{
-  print = "You are correct";
-}
-
-if (user-number != random-number) 
-{
-  print = "You are incorrect"
-}
-
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("slider").innerHTML
+  if (slider-value != random-number) {
+    document.getElementById("check").innerHTML = "You are incorrect"
+  }
 }

@@ -32,19 +32,17 @@
       <main class="mdl-layout__content">
         <img src="./images/badaman-dice.svg" alt="dice" width="70%" height="70%">
         <p>Drag the slider between 1-6</p>
+        <!-- Default Slider -->
         <label>
           Slider's Value
           <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
           min="0" max="6" value="0" tabindex="0"
-          onchange = "updateSliderValue(this.value)">
-        </label> 
+        </label>
         <!-- Raised button with ripple -->
-       <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="myButtonClicked()">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="convert()">
           Convert
         </button>
-        <!-- basic text -->
-        <p id="slider-value"></p>
+        <div id="check"></div>
       </main>
     </div>
   </body>
