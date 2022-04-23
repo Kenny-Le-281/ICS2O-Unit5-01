@@ -13,15 +13,26 @@ if (navigator.serviceWorker) {
 
 ;("use strict")
 
-/**
- * This function generates a random number between 1-6.
- */
-document.getElementById("slider-value").innerHTML =
-  Math.floor(Math.random() * 6) + 1
+var random-number = Math.floor(Math.random() * 6) + 1
+
+document.getElementByID(slider-value).onclick = myButtonClicked () {
+
+// number guessed by user
+var user-number = document.getElementById("slider").value;
+
+if (user-number == random-number) 
+{
+  print = "You are correct";
+}
+
+if (user-number != random-number) 
+{
+  print = "You are incorrect"
+}
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("slider-value").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("slider").innerHTML
 }
