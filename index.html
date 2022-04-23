@@ -26,24 +26,32 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Guessing game</span>
+          <span class="mdl-layout-title">Guessing Game</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <img src="./images/badaman-dice.svg" alt="dice" width="70%" height="70%">
-        <p>Drag the slider between 1-6</p>
-        <!-- Default Slider -->
-        <label>
-          Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="0" max="6" value="0" tabindex="0"
-        </label>
+        <h4>Guessing Game</h4>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="number" step=".01" id="fahrenheit">
+            <label class="mdl-textfield__label" for="fahrenheit">Fahrenheit:</label>
+            <span class="mdl-textfield__error">Too many decimals</span>
+          </div>
+        </form>
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="convert()">
           Convert
         </button>
-        <div id="check"></div>
+        <br>
+        <br>
+        <p>
+          <div id="answers">
+            <div id="celsius"></div>
+          </div>
+        </p>
       </main>
-    </div>
+     </div>
   </body>
 </html>
