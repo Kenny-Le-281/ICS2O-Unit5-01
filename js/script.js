@@ -16,14 +16,18 @@ if (navigator.serviceWorker) {
 /**
  * This function converts Fahrenheit to Celsius
  */
-function convert() {
+function check() {
   // input
-  const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
+  var guess = parseFloat(document.getElementById("slider").value)
 
-  // process
-  const celsius = ((fahrenheit - 32) * 5) / 9
+  // process and output
+  var random = Math.floor(Math.random() * 6) + 1
+  if (guess == random) {
+    document.getElementById("answers").innerHTML = "You are correct!"
+  }
 
-  // output
-  document.getElementById("celsius").innerHTML =
-    fahrenheit + " ℉ in celsius is equal to: " + celsius.toFixed(2) + " ℃"
+  if (guess != random) {
+    document.getElementById("answers").innerHTML = "You are incorrect!"
+  }
 }
+  
