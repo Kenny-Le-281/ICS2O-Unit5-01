@@ -30,4 +30,3 @@ function check() {
     document.getElementById("answers").innerHTML = "You are incorrect!"
   }
 }
-  
