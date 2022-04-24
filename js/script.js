@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 ;("use strict")
 
 /**
- * This function converts Fahrenheit to Celsius
+ * This function checks if you guessed the right number.
  */
 function check() {
   // input
