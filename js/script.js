@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
  */
 function check() {
   // input
-  var guess = parseFloat(document.getElementById("slider").value)
+  var guess = parseInt(document.getElementById("slider").value)
 
   // process and output
   var random = Math.floor(Math.random() * 6) + 1
