@@ -11,7 +11,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-;("use strict")
+'use strict'
 
 /**
  * This function checks if you guessed the right number.
@@ -21,7 +21,7 @@ function check() {
   var guess = parseInt(document.getElementById("slider").value)
 
   // process and output
-  var random = Math.floor(Math.random() * 6) + 1
+  const random = Math.floor(Math.random() * 6) + 1
   if (guess == random) {
     document.getElementById("answers").innerHTML = "You are correct!"
   }
