@@ -11,7 +11,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-'use strict'
+;("use strict")
 
 /**
  * This function checks if you guessed the right number.
